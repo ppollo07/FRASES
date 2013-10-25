@@ -3,22 +3,23 @@
 //Ariel Porporatto
 */
 
-var Frases = function(primera,segunda,tercera) {
+var App = function(primera,segunda,tercera) {
 	this.tipo = "";
 	this.timer = "5000";
 	var xcont = 0;
 	this[1] = primera;
 	this[2] = segunda;
 	this[3] = tercera;
+
 	this.init = function () {
 		div = document.getElementById(this.contenedor);
-		frases.MostrarFrases();
 		setInterval("frases.MostrarFrases()",this.timer);
+		this.MostrarFrases();
 	},
 	this.MostrarFrases = function () {
 		if(this.contenedor != ""){
 			if (!this.tipo){
-				if (xcont < Frases.length) {
+				if (xcont < App.length) {
 					xcont ++;
 					if (this.dato === "img"){
 						etiqueta = '<img src="' + this.path + this[xcont] + this.extencion + '" alt="'+this.alt+'" />';
@@ -34,7 +35,7 @@ var Frases = function(primera,segunda,tercera) {
 						});
 				};
 			} else {
-				aleatorio = Math.floor((Math.random()*(Frases.length))+1);
+				aleatorio = Math.floor((Math.random()*(App.length))+1);
 				if (this.dato === "img"){
 					etiqueta = '<img src="' + this.path + this[xcont] + this.extencion + '" alt="'+this.alt+'" />';
 				};
@@ -47,7 +48,7 @@ var Frases = function(primera,segunda,tercera) {
 						$(div).html(etiqueta);
 					});
 			};
-			if (xcont >= Frases.length){
+			if (xcont >= App.length){
 				xcont = 0;
 			};
 		}else{

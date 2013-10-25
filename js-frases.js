@@ -4,7 +4,7 @@
 */
 
 $(document).ready(function() {
-	frases = new Frases("Hola","Como","Estas"); /* nombre de las imagenes o frases separadas por , */
+	frases = new App("lalala","lolololo","lululu"); /* nombre de las imagenes o frases separadas por , */
 	frases.extencion = ""; /* tipo de imagen .png .jpg */
 	frases.path = ""; /* ruta de las imagenes */
 	frases.alt = ""; /* alt de la imagen */
