@@ -1,3 +1,8 @@
+/*
+//Author:@ppollo07
+//Ariel Porporatto
+*/
+
 $(document).ready(function() {
 	frases = new Frases("frase_1","frase_2","frase_3");
 	frases.extencion = ".png";
