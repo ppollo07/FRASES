@@ -42,7 +42,6 @@ var Frases = function(primera,segunda,tercera) {
 						$(div).html(etiqueta);
 					});
 			};
-			console.log(this.timer);
 			if (xcont >= Frases.length){
 				xcont = 0;
 			};
