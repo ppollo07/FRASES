@@ -1,3 +1,8 @@
+/*
+//Author:@ppollo07
+//Ariel Porporatto
+*/
+
 var Frases = function(primera,segunda,tercera) {
 	this.tipo = "";
 	this.timer = "5000";
